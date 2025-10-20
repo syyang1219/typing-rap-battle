@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import LeaderboardInfo from "@/components/LeaderboardInfo";
-import FallingNotes from "@/components/game/FallingNotes";
+
 import adManager from "@/lib/admob";
 
 export default function Home() {
@@ -16,9 +16,6 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center justify-center min-h-screen pb-[50px] bg-gradient-to-b from-purple-900 to-black">
-      {/* Falling Notes Background Effect */}
-      <FallingNotes isPlaying={true} bpm={80} explodeNotes={null} />
-
       <div className="text-center space-y-8 px-4">
         {/* 타이틀 */}
         <h1 className="text-6xl font-bold text-yellow-400 animate-pulse">🎤 타이핑 랩 배틀</h1>
