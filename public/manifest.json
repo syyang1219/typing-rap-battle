@@ -1,0 +1,40 @@
+{
+  "name": "타이핑 랩 배틀",
+  "short_name": "랩배틀",
+  "description": "무한 타이핑 랩 게임 - 리듬에 맞춰 타이핑하고 랭킹에 도전하세요!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#8B5CF6",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["games", "entertainment"],
+  "shortcuts": [
+    {
+      "name": "게임 시작",
+      "short_name": "시작",
+      "url": "/game",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "랭킹",
+      "short_name": "랭킹",
+      "url": "/leaderboard",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
