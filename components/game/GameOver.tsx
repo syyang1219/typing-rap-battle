@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Button from "../ui/Button";
 import RankingRegistration from "./RankingRegistration";
-import FallingNotes from "./FallingNotes";
 
 interface GameOverProps {
   score: number;
@@ -165,9 +164,6 @@ export default function GameOver({ score, highScore, onRestart, onBackToMenu, on
   return (
     <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-40">
       <div className="h-screen w-screen grid place-items-center mt-[-100px]">
-        {/* Falling Notes Background Effect */}
-        <FallingNotes isPlaying={true} bpm={80} explodeNotes={null} />
-
         {/* Confetti Animation */}
         {showConfetti && <Confetti />}
 

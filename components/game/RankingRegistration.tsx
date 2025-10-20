@@ -4,7 +4,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { submitScore } from "@/lib/firebase";
 import Button from "../ui/Button";
-import FallingNotes from "./FallingNotes";
 import adManager from "@/lib/admob";
 
 interface RankingRegistrationProps {
@@ -53,9 +52,6 @@ export default function RankingRegistration({ score, onComplete, onBackToMenu }:
   return (
     <div className="inset-0 bg-gradient-to-b from-purple-900 via-blue-900 to-indigo-900 flex items-center justify-center z-50 p-4">
       <div className="h-screen w-screen grid place-items-center mt-[-100px]">
-        {/* Falling Notes Background Effect */}
-        <FallingNotes isPlaying={true} bpm={80} explodeNotes={null} />
-
         <motion.div
           className="bg-white rounded-3xl p-8 max-w-md w-full shadow-2xl"
           initial={{ scale: 0.8, opacity: 0, y: -20 }}
